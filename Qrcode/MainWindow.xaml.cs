@@ -33,11 +33,17 @@ namespace Qrcode
             if(logadmin == login.Text && passadmin == passwordbox.Password)
             {
                 MessageBox.Show("hello admin ");
+                this.Close();
             }
             if (logauser == login.Text && passuser == passwordbox.Password)
             {
                 MessageBox.Show("hello user");
+                this.Close();
             }
         }
+    }
+    public partial class MainWindow2 : Window
+    {
+
     }
 }
