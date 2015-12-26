@@ -12,3 +12,5 @@ C:\Users\Demo\Desktop\Qrcode\Qrcode\Qrcode\obj\Debug\Qrcode.Properties.Resources
 C:\Users\Demo\Desktop\Qrcode\Qrcode\Qrcode\obj\Debug\Qrcode.csproj.GenerateResource.Cache
 C:\Users\Demo\Desktop\Qrcode\Qrcode\Qrcode\obj\Debug\Qrcode.exe
 C:\Users\Demo\Desktop\Qrcode\Qrcode\Qrcode\obj\Debug\Qrcode.pdb
+C:\Users\Demo\Desktop\Qrcode\Qrcode\Qrcode\obj\Debug\Window1.g.cs
+C:\Users\Demo\Desktop\Qrcode\Qrcode\Qrcode\obj\Debug\Window1.baml

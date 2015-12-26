@@ -20,6 +20,7 @@ namespace Qrcode
     /// </summary>
     public partial class MainWindow : Window
     {
+        Window1 secondForm;
         public MainWindow()
         {
             InitializeComponent();
@@ -32,18 +33,15 @@ namespace Qrcode
         {
             if(logadmin == login.Text && passadmin == passwordbox.Password)
             {
-                MessageBox.Show("hello admin ");
-                this.Close();
+                secondForm = new Window1();
+                secondForm.Show();
             }
             if (logauser == login.Text && passuser == passwordbox.Password)
             {
-                MessageBox.Show("hello user");
-                this.Close();
+                secondForm = new Window1();
+                secondForm.Show();
             }
+            this.Close();
         }
-    }
-    public partial class MainWindow2 : Window
-    {
-
     }
 }
