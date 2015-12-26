@@ -24,5 +24,20 @@ namespace Qrcode
         {
             InitializeComponent();
         }
+        string logadmin="admin";
+        string passadmin = "admin";
+        string logauser = "user1";
+        string passuser = "user";
+        private void enter_Click(object sender, RoutedEventArgs e)
+        {
+            if(logadmin == login.Text && passadmin == passwordbox.Password)
+            {
+                MessageBox.Show("hello admin ");
+            }
+            if (logauser == login.Text && passuser == passwordbox.Password)
+            {
+                MessageBox.Show("hello user");
+            }
+        }
     }
 }
