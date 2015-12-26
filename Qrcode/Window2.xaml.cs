@@ -15,17 +15,13 @@ using System.Windows.Shapes;
 namespace Qrcode
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window2 : Window
     {
-        public Window1()
+        public Window2()
         {
             InitializeComponent();
-        }
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-
         }
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)

@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="Window1" Height="300" Width="300">
     <Grid>
-        
+        <Menu Height="25" VerticalAlignment="Top">
+        <MenuItem Header="File" >
+            <MenuItem Header="Admin settings">
+                    <MenuItem Header="Set admin"></MenuItem>
+                    <MenuItem Header="Add new user"></MenuItem>
+                </MenuItem>
+                <MenuItem Header="Exit" Click="MenuItem_Click"></MenuItem>
+        </MenuItem>
+            </Menu>
     </Grid>
 </Window>

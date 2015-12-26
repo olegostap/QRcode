@@ -33,12 +33,12 @@ namespace Qrcode
         {
             if(logadmin == login.Text && passadmin == passwordbox.Password)
             {
-                secondForm = new Window1();
+                Window1 secondForm = new Window1();
                 secondForm.Show();
             }
             if (logauser == login.Text && passuser == passwordbox.Password)
             {
-                secondForm = new Window1();
+                Window2 secondForm = new Window2();
                 secondForm.Show();
             }
             this.Close();
