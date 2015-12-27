@@ -19,13 +19,27 @@ namespace Qrcode
     /// </summary>
     public partial class Window2 : Window
     {
+        //MainWindow secondForm;
         public Window2()
         {
             InitializeComponent();
         }
 
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Helow");
+        }
+
+        private void MenuItem_Click_2(object sender, RoutedEventArgs e)
+        { 
+                this.Close();   
+        }
+
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow secondForm = new MainWindow();
+            secondForm.Show();
             this.Close();
         }
     }
