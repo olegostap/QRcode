@@ -12,6 +12,7 @@
                 <MenuItem Header="Admin settings">
                     <MenuItem Header="Set admin"></MenuItem>
                     <MenuItem Header="Add new user"></MenuItem>
+                    <MenuItem Header="Delete user"></MenuItem>
                 </MenuItem>
             </MenuItem>
             <MenuItem Header="Exit"  >

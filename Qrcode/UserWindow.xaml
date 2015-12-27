@@ -10,7 +10,6 @@
                     <MenuItem Header="WinForms"></MenuItem>
                     <MenuItem Header="WPF" ></MenuItem>
                 </MenuItem>
-                <Separator />
                 </MenuItem>
             <MenuItem Header="Edit" ></MenuItem>
             <MenuItem Header="View" ></MenuItem>

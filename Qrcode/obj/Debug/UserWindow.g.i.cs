@@ -79,7 +79,7 @@ namespace Qrcode {
             return;
             case 2:
             
-            #line 18 "..\..\UserWindow.xaml"
+            #line 17 "..\..\UserWindow.xaml"
             ((System.Windows.Controls.MenuItem)(target)).Click += new System.Windows.RoutedEventHandler(this.MenuItem_Click_2);
             
             #line default
@@ -87,7 +87,7 @@ namespace Qrcode {
             return;
             case 3:
             
-            #line 20 "..\..\UserWindow.xaml"
+            #line 19 "..\..\UserWindow.xaml"
             ((System.Windows.Controls.MenuItem)(target)).Click += new System.Windows.RoutedEventHandler(this.MenuItem_Click);
             
             #line default
