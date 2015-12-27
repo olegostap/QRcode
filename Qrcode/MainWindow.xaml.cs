@@ -24,7 +24,7 @@ namespace Qrcode
         {
             InitializeComponent();
         }
-        string logadmin="admin";
+        string logadmin = "admin";
         string passadmin = "admin";
         string loguser = "user1";
         string passuser = "user";
@@ -32,17 +32,18 @@ namespace Qrcode
         {
             if (login.Text != logadmin && login.Text != loguser)
             {
-                tip.Text="Invalid login\ntry another one";
-                login.Text = "";
-                passwordbox.Password = "";
-            } else
-            if (passwordbox.Password != passadmin && passwordbox.Password != passuser)
-            {
-                 tip.Text="Invalid password\ntry another one";
+                trip.Text = "Invalid login\ntry another one";
                 login.Text = "";
                 passwordbox.Password = "";
             }
-            if(logadmin == login.Text && passadmin == passwordbox.Password)
+            else
+            if (passwordbox.Password != passadmin && passwordbox.Password != passuser)
+            {
+                this.trip.Text = "Invalid password\ntry another one";
+                login.Text = "";
+                passwordbox.Password = "";
+            }
+            if (logadmin == login.Text && passadmin == passwordbox.Password)
             {
                 AdminWindow adminWindow = new AdminWindow();
                 adminWindow.Show();
@@ -53,6 +54,37 @@ namespace Qrcode
                 UserWindow userWindow = new UserWindow();
                 userWindow.Show();
                 this.Close();
+            }
+        }
+        private void Grid_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                if (login.Text != logadmin && login.Text != loguser)
+                {
+                    trip.Text = "Invalid login\ntry another one";
+                    login.Text = "";
+                    passwordbox.Password = "";
+                }
+                else
+           if (passwordbox.Password != passadmin && passwordbox.Password != passuser)
+                {
+                    this.trip.Text = "Invalid password\ntry another one";
+                    login.Text = "";
+                    passwordbox.Password = "";
+                }
+                if (logadmin == login.Text && passadmin == passwordbox.Password)
+                {
+                    AdminWindow adminWindow = new AdminWindow();
+                    adminWindow.Show();
+                    this.Close();
+                }
+                if (loguser == login.Text && passuser == passwordbox.Password)
+                {
+                    UserWindow userWindow = new UserWindow();
+                    userWindow.Show();
+                    this.Close();
+                }
             }
         }
     }
