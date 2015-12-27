@@ -23,6 +23,7 @@ namespace Qrcode
         public MainWindow()
         {
             InitializeComponent();
+            login.Focus();
         }
         string logadmin = "admin";
         string passadmin = "admin";
@@ -60,30 +61,20 @@ namespace Qrcode
         {
             if (e.Key == Key.Enter)
             {
-                if (login.Text != logadmin && login.Text != loguser)
+                if(login.Text=="")
                 {
-                    trip.Text = "Invalid login\ntry another one";
-                    login.Text = "";
-                    passwordbox.Password = "";
+                    login.Focus();
                 }
                 else
-           if (passwordbox.Password != passadmin && passwordbox.Password != passuser)
                 {
-                    this.trip.Text = "Invalid password\ntry another one";
-                    login.Text = "";
-                    passwordbox.Password = "";
-                }
-                if (logadmin == login.Text && passadmin == passwordbox.Password)
-                {
-                    AdminWindow adminWindow = new AdminWindow();
-                    adminWindow.Show();
-                    this.Close();
-                }
-                if (loguser == login.Text && passuser == passwordbox.Password)
-                {
-                    UserWindow userWindow = new UserWindow();
-                    userWindow.Show();
-                    this.Close();
+                    if (passwordbox.Password == "")
+                    {
+                        passwordbox.Focus();
+                    }
+                    else
+                    {
+                        enter_Click(sender, e);
+                    }
                 }
             }
         }
