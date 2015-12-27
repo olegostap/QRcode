@@ -17,9 +17,9 @@ namespace Qrcode
     /// <summary>
     /// Логика взаимодействия для Window1.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class AdminWindow : Window
     {
-        public Window1()
+        public AdminWindow()
         {
             InitializeComponent();
         }
@@ -30,6 +30,13 @@ namespace Qrcode
 
         private void MenuItem_Click(object sender, RoutedEventArgs e)
         {
+            this.Close();
+        }
+
+        private void MenuItem_Click_1(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            mainWindow.Show();
             this.Close();
         }
     }

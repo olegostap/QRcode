@@ -12,5 +12,6 @@
         <Label x:Name="label_password" Content="Пароль" HorizontalAlignment="Left" Margin="150,150,0,0" VerticalAlignment="Top"/>
         <Button x:Name="enter" Content="Вхід" HorizontalAlignment="Left" Margin="395,126,0,0" VerticalAlignment="Top" Width="75" Click="enter_Click"/>
         <PasswordBox x:Name="passwordbox" HorizontalAlignment="Left" Margin="216,150,0,0" VerticalAlignment="Top" Height="23" Width="120"/>
+        <TextBox x:Name="tip" HorizontalAlignment="Left" Opacity="0.5" Height="45" Margin="216,35,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
     </Grid>
 </Window>

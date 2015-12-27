@@ -20,28 +20,40 @@ namespace Qrcode
     /// </summary>
     public partial class MainWindow : Window
     {
-        Window1 secondForm;
         public MainWindow()
         {
             InitializeComponent();
         }
         string logadmin="admin";
         string passadmin = "admin";
-        string logauser = "user1";
+        string loguser = "user1";
         string passuser = "user";
         private void enter_Click(object sender, RoutedEventArgs e)
         {
+            if (login.Text != logadmin && login.Text != loguser)
+            {
+                tip.Text="Invalid login\ntry another one";
+                login.Text = "";
+                passwordbox.Password = "";
+            } else
+            if (passwordbox.Password != passadmin && passwordbox.Password != passuser)
+            {
+                 tip.Text="Invalid password\ntry another one";
+                login.Text = "";
+                passwordbox.Password = "";
+            }
             if(logadmin == login.Text && passadmin == passwordbox.Password)
             {
-                Window1 secondForm = new Window1();
-                secondForm.Show();
+                AdminWindow adminWindow = new AdminWindow();
+                adminWindow.Show();
+                this.Close();
             }
-            if (logauser == login.Text && passuser == passwordbox.Password)
+            if (loguser == login.Text && passuser == passwordbox.Password)
             {
-                Window2 secondForm = new Window2();
-                secondForm.Show();
+                UserWindow userWindow = new UserWindow();
+                userWindow.Show();
+                this.Close();
             }
-            this.Close();
         }
     }
 }

@@ -17,10 +17,10 @@ namespace Qrcode
     /// <summary>
     /// Interaction logic for Window2.xaml
     /// </summary>
-    public partial class Window2 : Window
+    public partial class UserWindow : Window
     {
         //MainWindow secondForm;
-        public Window2()
+        public UserWindow()
         {
             InitializeComponent();
         }
@@ -28,7 +28,7 @@ namespace Qrcode
 
         private void MenuItem_Click_1(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Helow");
+            MessageBox.Show("Hello");
         }
 
         private void MenuItem_Click_2(object sender, RoutedEventArgs e)
